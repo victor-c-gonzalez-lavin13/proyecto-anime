@@ -1,0 +1,418 @@
+*{
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: gray;
+}
+
+a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.681);
+  font-size: 1.25em;
+  text-align: center;
+}
+
+button{
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  color: white;
+  background-color: rgb(226, 43, 43);
+}
+
+button:hover{
+  background-color: rgb(33, 95, 165);
+}
+
+.container{
+  max-width: 1400px;
+  margin: auto;
+}
+
+.color-acento{ color:rgb(226, 104, 43); }
+
+header {
+ display: flex;
+ min-height: 70px;
+ height: 50px;
+ justify-content: space-between;
+ background-color: rgb(56, 56, 174);
+ align-items: center;
+ padding: 10px;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  height: 70px;
+  margin-right: 10px;
+}
+
+nav a{
+  font-weight: 60;
+  padding-right: 10px;
+}
+
+nav a:hover{
+  color: orange;
+}
+
+h1{
+  color: rgba(255, 255, 255, 0.681);
+  font-size: 50px;
+  text-align: center;
+}
+
+h2{ font-size: 2.5em;}
+h3{ font-size: 1.5em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+@media (max-width: 700px){
+  header{
+    flex-direction: column;
+  }
+  nav{
+    padding: 10px 0px;
+  }
+}
+/*_____________________________________________*/
+
+.mainSection {
+  display: flex;
+  margin: 2% 4%;
+}
+
+.main-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav > ul > li {
+  position: relative;
+  white-space: nowrap;
+  float:none;
+}
+
+.main-nav a {
+  display: block;
+  position:relative;
+  color: #dae0e7;
+  margin: 10px;
+  padding: 15px 15px;
+  transition: 0.3s;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+/*-----------------------*/
+
+
+#hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("/resources/images/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#hero h1{
+  color: white;
+}
+
+#hero button{
+  font-size: 1.75em;
+}
+
+
+/*-----------------------*/
+#nuestras-series {
+  background-color: rgb(30,30,30);
+  color: white;
+  text-align: center;
+}
+
+#nuestras-series .container{
+  padding: 150px 12px;
+}
+
+#nuestras-series h2{
+  margin-top: 0;
+  font-size: 3.2em;
+}
+
+#nuestras-series p{
+  display: none;
+}
+
+#nuestras-series .card{
+  background-position: center center;
+  background-size: auto;
+  padding: 50px 0px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+/*_____________________________________________*/
+
+.card:first-child{
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("/resources/images/Demon\ slayer.jpg");
+
+}
+
+.card:nth-child(2){
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("/resources/images/suzume\ 2.jpg");
+}
+
+.card:nth-child(3){
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("/resources/images/Evangelion.jpg.jpg");
+
+}
+
+.card:nth-child(4){
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("/resources/images/Robotech.jpg");
+
+}
+
+.card:nth-child(5){
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("/resources/images/dragon\ ball\ 2.jpeg");
+
+}
+
+.card:nth-child(6){
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("/resources/images/ranma-1-2.jpg");
+
+}
+
+.card:nth-child(7){
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("/resources/images/date.jpg");
+
+}
+
+.card:nth-child(8){
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("/resources/images/urusei.jpeg");
+
+}
+.card h3{
+  margin-top: 0;
+  font-size: 2em;
+}
+
+/*_____________________________________________*/
+footer{
+  background-color: rgb(56, 56, 174);
+}
+
+footer p{
+  margin: 0;
+  padding: 18px;
+  color: rgb(245,245,245);
+}
+
+
+footer .container{
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*_____________________________________________*/
+@media (min-width: 850px){
+  header{
+      position: fixed;
+      width: 100%;
+  }
+
+  header .container{
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  header nav{
+      flex-direction: row;
+      padding-bottom: 0;
+      padding-right: 20px;
+  }
+
+  #hero h1{
+      font-size: 5em;
+  }
+/*_____________________________________________*/
+  #nuestras-series .series{
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 30px;
+      justify-content:center;
+  }
+
+  #nuestras-series p{
+      display: block;
+      margin-bottom: 30px;
+  }
+
+  #nuestras-series h2{
+      font-size: 4em;
+  }
+
+  #nuestras-series h3{
+      margin-top: 0;
+  }
+
+  #nuestras-series .card{
+      padding: 50px;
+      background-size: 100% 210px;
+      background-repeat: no-repeat;
+      background-position: 0;
+      background-color: rgba(50, 50, 50, 1);
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  }
+
+  .card:first-child{
+      background-image: linear-gradient(
+          0deg,
+          rgba(0,0,0,0.5),
+          rgba(0,0,0,0.5)
+      )
+      ,url("/resources/images/Demon\ slayer.jpg");
+
+  }
+
+  .card:nth-child(2){
+      background-image: linear-gradient(
+          0deg,
+          rgba(0,0,0,0.5),
+          rgba(0,0,0,0.5)
+      )
+      ,url("/resources/images/suzume\ 2.jpg");
+  }
+
+  .card:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/resources/images/Evangelion.jpg");
+
+  }
+
+  .card:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/resources/images/Robotech.jpg");
+  
+  }
+
+  .card:nth-child(5){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/resources/images/dragon\ ball\ 2.jpeg");
+  
+  }
+  
+  .card:nth-child(6){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/resources/images/ranma-1-2.jpg");
+  
+  }
+  
+  .card:nth-child(7){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/resources/images/date.jpg");
+  
+  }
+  
+  .card:nth-child(8){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/resources/images/urusei.jpeg");
+  }
+
+  footer .container{
+      justify-content:flex-end;
+  }
+}
