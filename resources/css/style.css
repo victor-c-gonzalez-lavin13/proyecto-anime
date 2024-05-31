@@ -9,7 +9,7 @@ html{
 body {
   font-family: sans-serif;
   margin: 0;
-  background-color: gray;
+  background-color: rgb(56, 56, 174);
 }
 
 a{
@@ -68,7 +68,7 @@ nav a{
 }
 
 nav a:hover{
-  color: orange;
+  color: #E67E22;
 }
 
 h1{
@@ -131,13 +131,12 @@ li{ font-size: 1.25em;}
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  height: 90vh;
+  height: 100vh;
   background-image: linear-gradient(
       0deg,
       rgba(0,0,0,0.5),
-      rgba(0,0,0,0.5)
-  )
-  ,url("/resources/images/fondo.jpg");
+      rgba(0,0,0,0.5))
+      ,url("/resources/images/fondo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -154,9 +153,15 @@ li{ font-size: 1.25em;}
 
 /*-----------------------*/
 #nuestras-series {
-  background-color: rgb(30,30,30);
+  background: linear-gradient(0deg,#2E4053, rgb(59, 59, 223));
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)),
+      url("/resources/images/blue\ eyes.jpg");
   color: white;
   text-align: center;
+ 
 }
 
 #nuestras-series .container{
@@ -178,6 +183,11 @@ li{ font-size: 1.25em;}
   padding: 50px 0px;
   margin: 10px;
   border-radius: 15px;
+  transition: transform .5;
+}
+
+#nuestras-series .card:hover {
+  transform: scale(1.1);
 }
 
 /*_____________________________________________*/
@@ -265,6 +275,10 @@ li{ font-size: 1.25em;}
   font-size: 2em;
 }
 
+.card h3:hover{
+  color:#E67E22;
+}
+
 /*_____________________________________________*/
 footer{
   background-color: rgb(56, 56, 174);
@@ -282,6 +296,10 @@ footer .container{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer .container a:hover{
+  color: #E67E22;
 }
 /*_____________________________________________*/
 @media (min-width: 850px){
